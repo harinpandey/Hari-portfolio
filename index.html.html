@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hari Narayan Pandey — Software Developer Portfolio</title>
+<meta name="description" content="Hari Narayan Pandey — CSE student and software developer building practical, AI-assisted products.">
+<style>
+:root{--bg:#07090d;--panel:#0d1118;--text:#f4f7fb;--muted:#8d98a8;--line:#1d2530;--accent:#7cf7d4;--accent2:#8ca7ff;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#13262b 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,9,13,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:-.04em}.logo span{color:var(--accent)}.links{display:flex;gap:26px;font-size:13px;color:var(--muted)}.links a:hover{color:#fff}
+.hero{min-height:88vh;display:grid;align-items:center;padding:90px 0 70px}.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase}.hero h1{font-size:clamp(56px,9vw,126px);line-height:.88;letter-spacing:-.075em;margin:20px 0 30px;max-width:1000px}.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1px #8b96a8}.hero p{max-width:650px;color:var(--muted);font-size:18px}.cta{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{border:1px solid var(--line);padding:13px 18px;border-radius:999px;font-size:13px;transition:.25s}.btn.primary{background:var(--text);color:#090b0f;border-color:var(--text)}.btn:hover{transform:translateY(-2px);border-color:#566273}
+.ticker{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;color:#778394;font-size:11px;letter-spacing:.15em;text-transform:uppercase}.ticker div{display:inline-block;padding:18px 0;animation:slide 24s linear infinite}.ticker span{margin:0 28px;color:var(--accent)}@keyframes slide{to{transform:translateX(-35%)}}
+section{padding:110px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.kicker{font-size:11px;color:var(--accent);letter-spacing:.15em}.section-head h2{font-size:clamp(38px,6vw,72px);letter-spacing:-.06em;line-height:.95;margin:10px 0 0}.section-head p{max-width:430px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 6;background:linear-gradient(145deg,#10161e,#0a0e14);border:1px solid var(--line);border-radius:22px;padding:28px;min-height:300px;position:relative;overflow:hidden;transition:.3s}.card:hover{transform:translateY(-5px);border-color:#354352}.card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:rgba(124,247,212,.08);filter:blur(30px);right:-80px;top:-70px}.num{font-size:12px;color:#5d6877}.card h3{font-size:30px;letter-spacing:-.04em;margin:50px 0 8px}.card p{color:var(--muted);max-width:570px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.tag{font-size:11px;border:1px solid #25303d;border-radius:999px;padding:6px 9px;color:#aab5c3}
+.feature{grid-column:span 12;min-height:390px}.feature h3{font-size:52px}.feature .number{color:var(--accent);font-size:14px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.skill{background:var(--bg);padding:25px;min-height:170px}.skill h4{margin:0 0 14px;font-size:15px}.skill p{color:var(--muted);font-size:14px;margin:0}.skill b{color:#fff;font-weight:600}
+.timeline{border-left:1px solid #34404d;margin-left:7px}.edu{padding:0 0 36px 30px;position:relative}.edu:before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}.edu .date{font-size:11px;color:var(--accent);letter-spacing:.12em}.edu h3{margin:8px 0 3px}.edu p{margin:0;color:var(--muted)}
+.contact{min-height:70vh;display:flex;flex-direction:column;justify-content:center}.contact h2{font-size:clamp(60px,10vw,140px);line-height:.82;letter-spacing:-.08em;margin:18px 0 40px}.contact h2 span{color:transparent;-webkit-text-stroke:1px #687485}.contact p{color:var(--muted);max-width:500px}.footer{padding:30px 0;color:#697585;font-size:12px;display:flex;justify-content:space-between;gap:20px}
+.cursor{position:fixed;pointer-events:none;width:9px;height:9px;border-radius:50%;background:var(--accent);z-index:100;mix-blend-mode:difference;transform:translate(-50%,-50%)}@media(max-width:760px){.links{display:none}.hero{min-height:78vh;padding-top:55px}.card,.feature{grid-column:span 12}.skills{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:22px}.contact h2{font-size:19vw}.footer{display:block}.footer div+div{margin-top:10px}}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<nav><div class="wrap nav"><a class="logo" href="#">HNP<span>.</span></a><div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Stack</a><a href="#education">Education</a><a href="#contact">Contact</a></div></div></nav>
+
+<main>
+<section class="hero"><div class="wrap">
+<div class="eyebrow">Computer Science Engineer · Builder · Problem Solver</div>
+<h1>Ideas into <em>working</em> products.</h1>
+<p>I’m Hari Narayan Pandey, a CSE student at Lovely Professional University building practical web products, exploring AI-assisted development, and strengthening my foundations in software engineering.</p>
+<div class="cta"><a class="btn primary" href="#work">Explore my work ↓</a><a class="btn" href="mailto:haripandey8387@gmail.com">Let's connect ↗</a><a class="btn" href="https://www.linkedin.com/in/hari-pandey-87077627" target="_blank">LinkedIn ↗</a></div>
+</div></section>
+
+<div class="ticker"><div>BUILD <span>•</span> LEARN <span>•</span> DEBUG <span>•</span> ITERATE <span>•</span> SHIP <span>•</span> BUILD <span>•</span> LEARN <span>•</span> DEBUG <span>•</span> ITERATE <span>•</span> SHIP <span>•</span></div></div>
+
+<section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">01 / ABOUT</div><h2>More than<br>a student.</h2></div><p>I approach projects as systems: understand the problem, shape the product, model the data, build the interface, test the edge cases, and iterate.</p></div>
+<div class="grid"><div class="card feature"><div class="number">CURRENT FOCUS</div><h3>Software engineering with a product mindset.</h3><p>My strongest current work combines full-stack web development, database-backed applications, UI/UX decisions and AI-assisted iteration. I’m also practicing DSA in C++ while strengthening Operating Systems and Computer Networks.</p><div class="tags"><span class="tag">C++ / DSA</span><span class="tag">Full Stack</span><span class="tag">Product Thinking</span><span class="tag">AI-Assisted Development</span></div></div></div>
+</div></section>
+
+<section id="work"><div class="wrap"><div class="section-head"><div><div class="kicker">02 / SELECTED WORK</div><h2>Things<br>I’m building.</h2></div><p>Three projects that show how I think about products, user problems, architecture and experimentation.</p></div>
+<div class="grid">
+<div class="card feature"><div class="num">01 · JUL 2026 — PRESENT</div><h3>ExOwn</h3><p>A student-focused marketplace bringing buying, selling, renting, exchanging and student services into one platform. I owned product ideation, UI/UX, feature requirements, data-model decisions, testing, debugging and deployment.</p><div class="tags"><span class="tag">Next.js 15</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Prisma</span><span class="tag">PostgreSQL / Neon</span><span class="tag">Firebase</span><span class="tag">Cloudinary</span><span class="tag">Gemini</span><span class="tag">Razorpay</span><span class="tag">Vercel</span></div></div>
+<div class="card"><div class="num">02 · PROTOTYPE / PAUSED</div><h3>Smart Receiving Experience</h3><p>A privacy-conscious UPI concept for users with multiple linked bank accounts. The prototype explores remembered receiving destinations, destination changes, authentication and payment confirmation.</p><div class="tags"><span class="tag">Product UX</span><span class="tag">Privacy</span><span class="tag">Payment Flow</span></div></div>
+<div class="card"><div class="num">03 · CONCEPT STAGE</div><h3>ALISH</h3><p>Adaptive Learning Intelligence System for Humans — a personal continuity engine designed around contextual questioning, decision memory, user-controlled memory, reflection and long-term continuity.</p><div class="tags"><span class="tag">AI Concept</span><span class="tag">Memory</span><span class="tag">Personalization</span></div></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap"><div class="section-head"><div><div class="kicker">03 / TOOLKIT</div><h2>My technical<br>stack.</h2></div><p>Technologies I currently work with, with an emphasis on fundamentals and practical implementation.</p></div>
+<div class="skills">
+<div class="skill"><h4>LANGUAGES</h4><p><b>C++</b> · C · Python · JavaScript · SQL</p></div>
+<div class="skill"><h4>FRONTEND</h4><p><b>Next.js</b> · React · TypeScript · Tailwind CSS · HTML5 · CSS3</p></div>
+<div class="skill"><h4>BACKEND & DATA</h4><p><b>Prisma</b> · PostgreSQL · Neon</p></div>
+<div class="skill"><h4>TOOLS</h4><p><b>Git</b> · GitHub · VS Code · Vercel</p></div>
+<div class="skill"><h4>CORE CS</h4><p><b>Data Structures & Algorithms</b> · OOP · DBMS</p></div>
+<div class="skill"><h4>CURRENTLY STRENGTHENING</h4><p><b>Operating Systems</b> · Computer Networks · problem solving</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap"><div class="section-head"><div><div class="kicker">04 / EDUCATION</div><h2>Building the<br>foundation.</h2></div><p>Academic background and current learning trajectory.</p></div>
+<div class="timeline">
+<div class="edu"><div class="date">EXPECTED 2029</div><h3>Lovely Professional University</h3><p>Bachelor of Technology — Computer Science and Engineering · CGPA 7.78 (First Year) · Phagwara, Punjab</p></div>
+<div class="edu"><div class="date">CURRENT PRACTICE</div><h3>Problem Solving</h3><p>Practicing C++ problems involving arrays, strings, linked lists, recursion, sorting and searching on LeetCode.</p></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><div class="kicker">05 / CONTACT</div><h2>Let’s build<br><span>something.</span></h2><p>Have an idea, collaboration, internship opportunity, or just want to talk development?</p><div class="cta"><a class="btn primary" href="mailto:haripandey8387@gmail.com">haripandey8387@gmail.com ↗</a><a class="btn" href="https://www.linkedin.com/in/hari-pandey-87077627" target="_blank">LinkedIn ↗</a></div></div></section>
+</main>
+<footer><div class="wrap footer"><div>© 2026 Hari Narayan Pandey</div><div>CSE · Full-Stack Development · Product Building</div></div></footer>
+<script>
+const c=document.getElementById('cursor');document.addEventListener('mousemove',e=>{c.style.left=e.clientX+'px';c.style.top=e.clientY+'px'});
+document.querySelectorAll('a').forEach(a=>a.addEventListener('mouseenter',()=>c.style.transform='translate(-50%,-50%) scale(2.4)'));
+document.querySelectorAll('a').forEach(a=>a.addEventListener('mouseleave',()=>c.style.transform='translate(-50%,-50%) scale(1)'));
+</script>
+</body></html>
